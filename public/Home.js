@@ -22,3 +22,13 @@ function Home() {
 }
 
 export default Home;
+
+import { fetchTopCoins, fetchCoinDetails } from './lib/fetchCrypto';
+
+useEffect(() => {
+  async function loadData() {
+    const coins = await fetchTopCoins();
+    console.log(coins);
+  }
+  loadData();
+}, []);
