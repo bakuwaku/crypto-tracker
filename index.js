@@ -2,8 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 
-const cryptoRoutes = require('./routes/crypto');
-const portfolioRoutes = require('./routes/portfolio');
+const cryptoRoutes = require('./public/crypto');
+const portfolioRoutes = require('./server/public/portfolio');
 
 const app = express();
 app.use(cors());
